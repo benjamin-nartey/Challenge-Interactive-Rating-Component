@@ -20,14 +20,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-ul {
-  list-style: none;
-}
-
 :root {
   --white: hsl(0, 0%, 100%);
   --light-grey: hsl(217, 12%, 63%);
@@ -36,6 +28,14 @@ ul {
   --deep-dark-blue: hsl(216, 12%, 8%);
   --orange: hsl(25, 97%, 53%);
   --section-black: hsla(215, 24%, 12%, 1);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
 }
 
 body {
@@ -64,7 +64,6 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  display: none;
 }
 
 .star-icon-container {
@@ -182,4 +181,8 @@ body {
 
 .thank-you-container .main-paragraph {
   margin-bottom: 0;
+}
+
+.hidden {
+  display: none;
 }

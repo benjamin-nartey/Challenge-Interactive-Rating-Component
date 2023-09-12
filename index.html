@@ -21,6 +21,8 @@
       href="./images/favicon-32x32.png"
     />
 
+    <script src="/index.js" defer></script>
+
     <title>Interactive rating component</title>
   </head>
 
@@ -44,17 +46,19 @@
           <li><button class="btn-rate">4</button></li>
           <li><button class="btn-rate">5</button></li>
         </ul>
-        <button class="btn-submit">Submit</button>
+        <button class="btn-submit" id="submit">Submit</button>
       </div>
 
-      <div class="thank-you-container">
+      <div class="thank-you-container hidden">
         <img
           class="hero-img"
           src="/images/illustration-thank-you.svg"
           alt="atm-machine"
         />
 
-        <span class="rate-display">You selected 4 out of 5</span>
+        <span class="rate-display"
+          >You selected <span class="selected-rate"></span> out of 5</span
+        >
 
         <h2 class="heading-main">Thank you!</h2>
 
@@ -64,6 +68,5 @@
         </p>
       </div>
     </section>
-    <script src="/index.js"></script>
   </body>
 </html>
