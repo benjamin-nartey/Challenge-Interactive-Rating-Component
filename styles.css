@@ -153,6 +153,7 @@ body {
 }
 
 .thank-you-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -187,7 +188,7 @@ body {
   display: none;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (320px < width < 767px) {
   .main-section {
     padding: 2rem;
   }
